@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        background-color: chocolate;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+
+        float: right;
+      }
+      #kutu1 {
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="clearfix">
+      <div class="box">kutu1</div>
+      <div class="box">kutu2</div>
+      <div class="box">kutu3</div>
+      <!-- <div style="clear: both"></div> -->
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quis
+      nesciunt assumenda, unde maxime ullam dolorum repudiandae praesentium
+      porro impedit eius enim quo quam suscipit ad quasi dolorem a. Nisi?
+    </p>
+  </body>
+</html>

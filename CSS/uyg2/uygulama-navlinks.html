@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      #showcase {
+        background-color: #2e4c6d;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+      }
+
+      #how-it-works {
+        background-color: #fc997c;
+        padding: 10px;
+      }
+      .main-header {
+        background-color: #fc997c;
+        padding: 8px 16px;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 101px);
+        text-align: right;
+      }
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      .main-header__logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .main-nav__item a {
+        text-decoration: none;
+        color: #ffff;
+      }
+      .main-nav__item a:hover,
+      .main-nav__item:hover::before {
+        color: #2e4c6d;
+      }
+
+      .main-nav__item::before {
+        content: "\2022";
+        color: #fff;
+      }
+
+      .main-nav__item:active::before,
+      .main-nav__item a:active {
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- margin -->
+    <!-- padding -->
+    <!-- border -->
+    <header class="main-header">
+      <a href="" class="main-header__logo">MovieAPP</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Home</a></li>
+          <li class="main-nav__item"><a href="#">Movie</a></li>
+          <li class="main-nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <h1>welcome to movie</h1>
+      </section>
+      <section id="how-it-works">
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+      </section>
+    </main>
+  </body>
+</html>

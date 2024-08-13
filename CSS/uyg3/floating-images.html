@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      border: 1px solid red;
+      padding: 5px;
+    }
+    img {
+      width: 300px;
+      float: left;
+      margin-right: 10px;
+    }
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+      recusandae porro doloribus eaque laborum vel velit amet esse ut
+      consequuntur. Non quos, nulla maiores porro voluptates at nemo doloribus
+      cupiditate.
+    </p>
+    <p class="clearfix">
+      <img src="rowing.jpeg" alt="" />Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Officiis optio dolorum magnam. Expedita omnis nemo unde
+      tempora inventore iusto ipsa maiores. Officiis doloribus eum libero nobis
+      numquam blanditiis enim inventore.
+    </p>
+  </body>
+</html>

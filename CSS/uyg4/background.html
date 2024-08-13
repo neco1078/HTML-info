@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* html,
+      body {
+        height: 100%;
+      } */
+      body {
+        margin: 0;
+      }
+      #header {
+        position: relative;
+
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-position: top center;
+
+        /* görünür alanın %50 sini al */
+        height: 100vh;
+      }
+      #header h1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        color: red;
+      }
+      .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: aquamarine;
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Background Text</h1>
+      <!-- <div class="cover"></div> -->
+    </div>
+  </body>
+</html>
